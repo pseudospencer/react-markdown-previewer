@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-// import './MarkdownPreviewer.css';
+import './MarkdownPreviewer.css';
 import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
 import Editor from "./EditorComponent";
 import Preview from "./PreviewComponent";
+
 import marked from "marked";
 
 import sampleMarkdown from "./sampleMarkdown";
@@ -28,13 +29,14 @@ class MarkdownPreviewer extends Component {
         });
     }
     render() {
-        return (<div className="MarkdownPreviewer">
+        return (<div id="MarkdownPreviewer">
             <header><Header/></header>
             <main>
                 <Editor
                     handleChange={this.handleChange}
                     value={this.state.editorInput}
                 />
+
                 <Preview
                     value={this.state.previewContents}
                 />
