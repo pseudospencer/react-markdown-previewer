@@ -1,9 +1,4 @@
-label {
-    display: block;
-}
-
 textarea {
-    display: block;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1em;
     box-sizing: border-box;
@@ -13,4 +8,5 @@ textarea {
     min-height: 160px;
 
     border: 1px solid var(--light-grey-color);
+    flex: 1;
 }

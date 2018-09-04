@@ -5,7 +5,6 @@ function Preview(props) {
     return (
         <div className="preview-container">
             <h3 className="section-label">Result:</h3>
-            <hr />
             <div
                 id="preview"
                 dangerouslySetInnerHTML={dangerousHtml}
