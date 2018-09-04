@@ -36,7 +36,6 @@ class MarkdownPreviewer extends Component {
                     handleChange={this.handleChange}
                     value={this.state.editorInput}
                 />
-
                 <Preview
                     value={this.state.previewContents}
                 />

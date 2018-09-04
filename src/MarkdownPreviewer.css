@@ -3,7 +3,7 @@
     --white-color: #fff;
     --light-grey-color: #a3a3a3;
     --blue-color: #4286f4;
-
+    --max-width: 1200px;
 }
 
 #MarkdownPreviewer {
@@ -26,6 +26,7 @@ pre, code {
 .preview-container,
 .footer-container {
     width: 80%;
+    max-width: var(--max-width);
     padding: 1em;
 }
 
